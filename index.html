@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片压缩工具</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>图片压缩工具</h1>
+            <p class="subtitle">简单高效的图片压缩体验</p>
+        </header>
+
+        <div class="upload-container">
+            <div class="upload-area" id="dropZone">
+                <input type="file" id="fileInput" accept="image/png,image/jpeg" hidden>
+                <svg class="upload-icon" viewBox="0 0 24 24">
+                    <path d="M12 4L12 16M12 4L8 8M12 4L16 8M4 17L4 19C4 19.5523 4.44772 20 5 20L19 20C19.5523 20 20 19.5523 20 19L20 17"></path>
+                </svg>
+                <p>拖拽图片到这里 或 <label for="fileInput" class="upload-button">选择文件</label></p>
+                <p class="upload-hint">支持 PNG、JPG 格式</p>
+            </div>
+        </div>
+
+        <div class="preview-section hidden" id="previewSection">
+            <div class="quality-control">
+                <label for="quality">压缩质量</label>
+                <div class="slider-container">
+                    <input type="range" id="quality" min="0" max="100" value="80">
+                    <span id="qualityValue">80%</span>
+                </div>
+            </div>
+
+            <div class="preview-container">
+                <div class="preview-card">
+                    <h3>原始图片</h3>
+                    <div class="preview-image">
+                        <img i
