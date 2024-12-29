@@ -37,4 +37,31 @@
                 <div class="preview-card">
                     <h3>原始图片</h3>
                     <div class="preview-image">
-                        <img i
+                        <img id="originalPreview" alt="原图预览">
+                    </div>
+                    <div class="file-info">
+                        <span>文件大小：</span>
+                        <span id="originalSize">0 KB</span>
+                    </div>
+                </div>
+
+                <div class="preview-card">
+                    <h3>压缩后</h3>
+                    <div class="preview-image">
+                        <img id="compressedPreview" alt="压缩预览">
+                    </div>
+                    <div class="file-info">
+                        <span>文件大小：</span>
+                        <span id="compressedSize">0 KB</span>
+                    </div>
+                </div>
+            </div>
+
+            <button id="downloadBtn" class="download-button">
+                下载压缩后的图片
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
